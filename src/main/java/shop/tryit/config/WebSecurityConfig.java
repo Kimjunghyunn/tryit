@@ -33,7 +33,7 @@ public class WebSecurityConfig {
         http
                 .csrf().disable()
                 .authorizeRequests() //요청에 의한 보안 검사 시작
-                .antMatchers("/", "/css/**", "/img/**", "/js/**", "/vendor/**", "/files/**",
+                .antMatchers("/", "/css/**", "/img/**", "/js/**", "/vendor/**", "/files/**", "/api/**",
                         "/members/new", "/members/login", "/members/logout", "/members/vendor/**",
                         "/items", "/items/{id}", "/items/vendor/**", "/qna", "/notices", "/notices/{noticeId}").permitAll()
                 .antMatchers("/members/update", "/carts", "/carts/{cartItemId}/update", "/carts/{cartItemId}/delete",
